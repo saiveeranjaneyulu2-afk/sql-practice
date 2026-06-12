@@ -1,0 +1,22 @@
+1. Write a SQL query to select all employees whose salaries are greater than $50,000 and are working in the 'Sales' or 'Marketing' department, using the appropriate comparison and logical operators.
+A) select * from emp where sal > 50000 and job in ('salesman','marketing');
+   (OR)
+   select * from emp where sal > 50000 and job = 'salesman' or 'marketing';
+
+2. Use arithmetic operators to calculate the total salary of each employee,     considering a 10% bonus, and display the results in a new column named 'Total_Salary'.
+A) SELECT EMP_NO,E_NAME,SAL,
+   SAL+(SAL*0.10) AS TATAL_SAL
+   FROM EMP;
+
+3. Implement a query that filters employees based on their hire date, using date operators to find those hired between '2018-01-01' and '2020-12-31'.
+A) SELECT HIREDATE FROM EMP
+   WHERE HIREDATE BETWEEN '2018-01-01' AND '2020-12-31';
+   (OR)
+    SELECT HIREDATE FROM EMP WHERE HIREDATE = '2018-01-01' AND HIREDATE = '2020-12-31';
+
+4. Create a query that uses the LIKE operator to find all employees whose names start with 'A' or 'B', and order the results alphabetically by employee name.
+A)SELECT E_NAME FROM EMP WHERE E_NAME LIKE ('A%') OR ('B%');
+
+5. Write a query that uses the IN operator to select all employees working in the 'IT', 'Finance', or 'HR' departments, and display their department names and job titles.
+A) SELECT JOB,DEP_NO FROM EMP
+   WHERE JOB IN ('IT','FINANCE','HR');
