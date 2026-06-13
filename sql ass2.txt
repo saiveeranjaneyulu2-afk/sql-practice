@@ -1,0 +1,13 @@
+1. Create a SQL function named CalculateOrderTotal that takes an order ID as input and returns the total cost of the order, including any applicable taxes.
+A) SELECT SUM(SAL) AS TOTTAL_SAL FROM EMP;
+
+2. Develop a SQL function named DetermineLoyaltyLevel that takes a customer ID as input and returns the customer's loyalty level based on their total spend across all orders.
+A) SELECT dbo.DetermineLoyaltyLevel(123) AS LoyaltyLevel;
+
+3. Write example queries that demonstrate how to use each of the created functions to retrieve meaningful data from the database.
+A) dbo.CalculateOrderTotal(@OrderID)
+   dbo.DetermineLoyaltyLevel(@CustomerID)
+
+4. Test the functions with sample data to ensure they produce the expected results and handle edge cases appropriately.
+A) SELECT dbo.CalculateOrderTotal(101) AS OrderTotal;
+   SELECT dbo.DetermineLoyaltyLevel(1) AS LoyaltyLevel;
