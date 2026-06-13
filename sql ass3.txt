@@ -1,0 +1,17 @@
+1. Write a SQL query to select products with an average sale price greater than $100, using the HAVING clause to filter the results.
+A) SELECT E_NAME, AVG(SAL)  AS SAL FROM EMP  GROUP BY E_NAME HAVING AVG(SAL) > 100;
+
+2. Develop a SQL query that groups sales data by region and uses the HAVING clause to identify regions with total sales exceeding $10,000.
+A) SELECT JOB,SUM(SAL) AS TOTAK_SAL FROM EMP  GROUP BY JOB HAVING SUM(SAL)>5000;
+
+3. Create a SQL query to find products with a sales count greater than 50, applying the HAVING clause to filter the grouped data.
+A) SELECT E_NAME,COUNT(*) AS
+   DEP_NO FROM EMP
+   GROUP BY E_NAME HAVING COUNT(*) ;
+
+4. Write a SQL query that calculates the total sales for each product and uses the HAVING clause to select products with total sales between 5,000and20,000.
+A) SELECT E_NAME,SUM(SAL) AS TOTAL_SAL
+   FROM EMP GROUP BY E_NAME
+   HAVING SUM(SAL) BETWEEN 5000 AND 20000;
+
+5. Optimize each query for performance, considering indexing, subqueries, and other relevant SQL techniques.
